@@ -6,4 +6,5 @@ installing:
 [plugin.activate-linux]
 active = true
 source = "activate linux meme/Main.qml"
+![alt_image](./plugin.png)
 
