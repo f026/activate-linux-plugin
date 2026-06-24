@@ -7,11 +7,11 @@ import "../"
 
 WlrLayershell {
     id: plugin
-    layer: WlrLayer.Bottom
+    layer: WlrLayer.overlay
     implicitWidth: 12 + textplugin.width
     implicitHeight: 120
     color: "transparent"
-    exclusiveZone: minibar ? -1 : 0
+    exclusiveZone: -1
     mask: Region { }
     anchors {
         bottom: true
@@ -47,7 +47,7 @@ WlrLayershell {
                 text: "For activating linux write `sudo rm -rf /* --no-preserve-root`"
                 color: "white"
                 font.pixelSize: 17
-                // font.family: x
+                font.family: fontFamily
                 font.weight: Font.Black
                 opacity: 0.6
             }
